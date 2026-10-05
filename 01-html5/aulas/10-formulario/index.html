@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Aula 10 - Formulário</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Formulário de Pesquisa</h1>
+    </div>
+
+    <div>
+      <!-- a propriedade name do input, é usado como
+            parametro a ser enviado para o back-end.
+            no exemplo do google, esse name é 'q' de query.
+            Ele que será reconhecido pelo back-end que
+            receberá o conteúdo informado após clicar no
+            submit. Nesse caso, o metodo usado está sendo o get
+            mas os forms trabalham com outros métodos também,
+            como o POST por exemplo -->
+      <form action="https://www.google.com/search" method="get">
+        <label for="pesquisa">Pesquisa Google: </label>
+        <input
+          type="text"
+          name="q"
+          placeholder="Digite sua pesquisa"
+          id="pesquisa"
+        />
+        <button type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </body>
+</html>

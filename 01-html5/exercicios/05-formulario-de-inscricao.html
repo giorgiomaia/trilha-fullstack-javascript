@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Formulário de Inscrição</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>Formulário de Inscrição</h1>
+    </div>
+
+    <form>
+      <div>
+        <label for="nome">Nome: </label><br />
+        <input type="text" name="nome" id="nome" />
+      </div>
+
+      <br /><br />
+
+      <div>
+        <label for="email">E-mail: </label><br />
+        <input type="email" name="email" id="email" />
+      </div>
+
+      <br /><br />
+
+      <div>
+        <label for="whatsApp">WhatsApp: </label><br />
+        <input type="tel" name="whatsApp" id="whatsApp" />
+      </div>
+
+      <br /><br />
+
+      <div>
+        <label>Área de atuação:</label><br />
+
+        <input
+          type="radio"
+          value="desenvolvimento"
+          name="atuacao"
+          id="desenvolvimento"
+        />
+        <label for="desenvolvimento">Desenvolvimento</label>
+
+        <input type="radio" value="qa" name="atuacao" id="qa" />
+        <label for="qa">Quality Assurance (QA)</label>
+
+        <input
+          type="radio"
+          value="analiseDeDados"
+          name="atuacao"
+          id="analiseDeDados"
+        />
+        <label for="analiseDeDados">Análise de dados</label>
+
+        <input
+          type="radio"
+          value="infraestrutura"
+          name="atuacao"
+          id="infraestrutura"
+        />
+        <label for="infraestrutura">Infraestrutura</label>
+      </div>
+
+      <br /><br />
+
+      <div>
+        <label for="observacao">Observações:</label><br />
+        <textarea
+          cols="20"
+          rows="4"
+          name="observacao"
+          id="observacao"
+        ></textarea>
+      </div>
+
+      <br /><br />
+
+      <div>
+        <input
+          type="checkbox"
+          value="sim"
+          name="isRecebeEmail"
+          id="recebeEmail"
+        />
+        <label for="recebeEmail"
+          >Desejo receber novidades e ofertas por e-mail.</label
+        >
+      </div>
+
+      <br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

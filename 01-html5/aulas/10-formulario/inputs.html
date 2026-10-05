@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Aula 10 - Input</title>
+  </head>
+  <body>
+    <form action="">
+      <!-- Campo de texto -->
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" id="nome" />
+      <br /><br />
+
+      <!-- Campo de número -->
+      <label for="idade">Idade: </label>
+      <input type="number" min="18" max="100" name="idade" id="idade" />
+      <br /><br />
+
+      <!-- Campo data -->
+      <label for="dataNascimento">Data de nascimento: </label>
+      <input type="date" name="dataNascimento" id="dataNascimento" />
+      <br /><br />
+
+      <!-- Campo de e-mail -->
+      <label for="email">E-mail: </label>
+      <input type="email" name="email" id="email" />
+      <br /><br />
+
+      <!-- Campo de senha -->
+      <label for="senha">Senha: </label>
+      <input type="password" required name="senha" id="senha" />
+      <br /><br />
+
+      <!-- Campo de seleção com rádio -->
+      <label>Gênero:</label><br />
+      <input type="radio" value="m" name="genero" id="masculino" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" value="f" name="genero" id="feminino" />
+      <label for="feminino">Feminino</label> <br /><br />
+
+      <!-- Campo de seleção com checkbox -->
+      <label>Interesses:</label><br />
+      <input type="checkbox" value="back" name="backEnd" id="backEnd" />
+      <label for="backEnd">Back-End</label>
+      <input type="checkbox" value="front" name="frontEnd" id="frontEnd" />
+      <label for="frontEnd">Front-End</label>
+      <input type="checkbox" value="mobile" name="mobile" id="mobile" />
+      <label for="mobile">Mobile</label> <br /><br />
+
+      <!-- Campo de arquivo (upload) -->
+      <label for="avatar">Foto do perfil:</label><br />
+      <input type="file" name="fotoPerfil" id="avatar" />
+      <br /><br />
+
+      <!-- Campo de caixa de seleção -->
+      <label for="situacao">Situação:</label>
+      <select name="situacao" id="situacao">
+        <option disabled selected value="">Selecione a opção...</option>
+        <option value="estudante">
+          Estudando para me tornar um programador
+        </option>
+        <option value="estagiario">Atuando como estagiário/trainee</option>
+        <option value="devJunior">Atuando como desenvolvedor júnior</option>
+        <option value="devPleno">Atuando como desenvolvedor pleno</option>
+        <option value="devSenior">Atuando como desenvolvedor sênior</option>
+      </select>
+      <br /><br />
+
+      <!-- Campo de área de texto de múltiplas linhas -->
+      <label for="sobre">Sobre mim:</label><br />
+      <textarea
+        cols="35"
+        rows="6"
+        placeholder="Fale sobre você..."
+        name="sobre"
+        id="sobre"
+      ></textarea
+      ><br />
+      <br /><br />
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
